@@ -1,10 +1,15 @@
 const express = require('express')
 const app = express()
-var hbs = require('express-handlebars');
+const cookieParser = require('cookie-parser')
+const hbs = require('express-handlebars');
 
+const AppMiddleware = require('./app/middlewares/app.middleware')
+
+app.use(cookieParser())
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 app.use(express.static('public/assets'))
+app.use(AppMiddleware.AppMiddleware)
 app.engine('hbs', hbs({
     extname: 'hbs',
     defaultLayout: 'layouts/app',
