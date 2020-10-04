@@ -1,5 +1,7 @@
 class baseController {
-  index = (req, res) => {};
+  index = (req, res) => {
+    res.render("");
+  };
 }
 
 module.exports = new baseController();
