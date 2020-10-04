@@ -1,15 +1,17 @@
 {
-  "name": "node-boilerplate",
+  "name": "node-express-barebone",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
-  "author": "Yubaraj Shrestha <companion.krish@gmail.com>",
+  "author": "Yuhanna Kapali <yuhannakapali@gmail.com>",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
   "dependencies": {
     "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
