@@ -7,5 +7,6 @@ router.get("/", frontController.index);
 
 router.get("/user/create", userController.index);
 router.post("/user/create", userController.create);
+router.get("/user/list", userController.view);
 
 module.exports = router;

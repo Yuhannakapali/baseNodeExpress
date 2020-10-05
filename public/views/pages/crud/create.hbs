@@ -1,1 +1,45 @@
-<strong> Create crud</strong>
+<div class="container">
+    <div class="col-12 mt-3">
+        <h1>{{title}}</h1>
+    </div>
+    <div class="col-8 mt-5">
+        <form action="frontend/user/create" method="post" autocomplete=”off”>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="text" class="form-control" id="FormInput1" placeholder="Jhon Doe" value="{{user.name}}">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" id="FormInput2" placeholder="JhonDoe@example.com"
+                    value="{{user.email}}">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">phone</label>
+                <input type="tel" class="form-control" id="FormInput3" placeholder="+977-XXXX-XXX-XXX"
+                    value="{{user.phone}}">
+            </div>
+            {{!-- <div class="form-group">
+                <label for="FormSelect">Role</label>
+                <select class="form-control" id="FormSelect" value="{{user.role}}">
+                    <option>Admin</option>
+                    <option>Manager</option>
+                    <option>Client</option>
+                    <option>Driver</option>
+                    <option>Watchman</option>
+                </select>
+            </div> --}}
+
+        </form>
+        <div class="form-group">
+
+            <button type="submit" class="btn btn-primary">
+                <i class="fa fa-database"></i>
+                Submit</button>
+
+            <a href="/user/list" class="btn btn-secondary">
+                <i class="fa fa-list-alt"></i> View
+                All</a>
+
+        </div>
+    </div>
+</div>

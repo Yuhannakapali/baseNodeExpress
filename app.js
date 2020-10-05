@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const cookieParser = require("cookie-parser");
 const hbs = require("express-handlebars");
+require("./config/database");
 
 const AppMiddleware = require("./app/middlewares/app.middleware");
 

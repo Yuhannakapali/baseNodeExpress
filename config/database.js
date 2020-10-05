@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodo://localhost:27017/Users",
+  "mongodb://localhost:27017/Users",
   { useNewUrlParser: true },
   (err) => {
     if (!err) {
@@ -12,4 +12,4 @@ mongoose.connect(
   }
 );
 
-require("./user");
+require("../app/model/user");

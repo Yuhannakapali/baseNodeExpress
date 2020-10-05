@@ -1,6 +1,6 @@
 class baseController {
   index = (req, res) => {
-    res.render("");
+    res.send("test");
   };
 }
 
